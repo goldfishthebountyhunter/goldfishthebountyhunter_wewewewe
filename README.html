@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="C2C Server App">
+    <title>C2C Server App - Read Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 8px 0;
+        }
+        code {
+            background-color: #f7f7f7;
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #f7f7f7;
+            padding: 16px;
+            border-radius: 4px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4); /* Black background with transparency */
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: red;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: #ddd;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn {
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            cursor: pointer;
+            text-align: center;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>C2C Server App</h1>
+        <p>Peer-to-Peer Communication in Action</p>
+    </header>
+    
+    <div class="container">
+        <section>
+            <h2>Introduction</h2>
+            <p>Welcome to the C2C Server App! This project enables peer-to-peer (P2P) communication by allowing clients to connect directly with one another, forming a decentralized network. It is built to support real-time messaging, file transfers, and more.</p>
+        </section>
+
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Real-time messaging between clients</li>
+                <li>File transfer capabilities</li>
+                <li>End-to-end encryption for secure communication</li>
+                <li>Lightweight and scalable server architecture</li>
+                <li>Easy to integrate with existing systems</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Installation</h2>
+            <p>Follow these steps to get the C2C Server App running on your local machine:</p>
+            <pre>
+$ git clone https://github.com/your-username/c2c-server-app.git
+$ cd c2c-server-app
+$ npm install
+$ npm start
+            </pre>
+            <p>Make sure you have <code>Node.js</code> installed. You can download it from <a href="https://nodejs.org/">here</a>.</p>
+        </section>
+
+        <section>
+            <h2>Usage</h2>
+            <p>Once the app is up and running, follow these steps to connect to other peers:</p>
+            <ul>
+                <li>Run the server with <code>npm start</code>.</li>
+                <li>Open the app in your browser (usually at <code>http://localhost:3000</code>).</li>
+                <li>Each client will be given a unique identifier (peer ID) for connecting with others.</li>
+                <li>Use the interface to initiate connections with other peers, send messages, and transfer files.</li>
+            </ul>
+            <p>Enjoy seamless client-to-client communication!</p>
+        </section>
+
+        <section>
+            <h2>Technologies Used</h2>
+            <ul>
+                <li><strong>Node.js</strong> - For server-side operations</li>
+                <li><strong>WebSocket</strong> - For real-time communication</li>
+                <li><strong>Express.js</strong> - Web framework for building the server</li>
+                <li><strong>Socket.io</strong> - For bidirectional communication between clients and server</li>
+                <li><strong>PeerJS</strong> - To handle peer-to-peer connections</li>
+                <li><strong>JavaScript (ES6+)</strong> - For client-side scripting</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contributing</h2>
+            <p>We welcome contributions from the community! If you'd like to help improve this project, please fork the repository, create a new branch, and submit a pull request. Here's how to get started:</p>
+            <pre>
+$ git clone https://github.com/your-username/c2c-server-app.git
+$ git checkout -b your-feature-branch
+$ git commit -am 'Add new feature'
+$ git push origin your-feature-branch
+$ Open a pull request on GitHub
+            </pre>
+            <p>For more information, check out our <a href="CONTRIBUTING.md">Contributing Guidelines</a>.</p>
+        </section>
+
+        <section>
+            <h2>License</h2>
+            <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+        </section>
+
+        <!-- Open Source Button -->
+        <button class="btn" id="openModalBtn">Open Source / Mirror</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Open Source / Mirror Link</h2>
+            <p>Click below to view the source code or mirror:</p>
+            <a href="https://github.com/your-username/c2c-server-app" target="_blank" style="color: #fff; font-size: 18px; text-decoration: underline;">View on GitHub</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 C2C Server App. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("openModalBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
